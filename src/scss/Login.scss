@@ -1,0 +1,76 @@
+@import '@/qunar/reset.scss';
+
+html, body, #root, .box {
+    @include rect(100%, 100%);
+  }
+.nav {
+  @include rect(100%, auto);
+  @include background-color(#eee);
+  @include text-align();
+  @include font-size(0.22rem);
+  @include line-height(0.45rem);
+  @include position(relative);
+  .back{
+    @include position(absolute);
+    left: 0.1rem;
+    @include font-size(0.3rem);
+  }
+}
+
+.boxs {
+  @include padding(0.2rem);
+}
+
+.bigbtn {
+  @include margin-top(15%);
+  span {
+    @include font-size(0.28rem);
+  }
+}
+
+// .regcode {
+//  @include rect(100%, auto);
+//  @include text-align();
+//  @include margin-top(9%);
+//  @include font-size(0.16rem);
+// }
+.regis {
+  display: block;
+  @include color(#000);
+  @include margin-top(10%);
+  @include rect(100%, auto);
+  @include text-align();
+  @include font-size(0.16rem);
+}
+
+.third {
+    @include rect(100%, auto);
+    @include text-align();
+    @include margin-top(30%);
+    @include font-size(0.15rem);
+    @include font-color(#eee);
+   }
+
+.zhong {
+  @include flexbox();
+  @include justify-content();
+  @include padding-top(10%);
+  .icon {
+    @include rect(36%, auto);
+    @include flexbox();
+    @include justify-content(space-between);
+    .others {
+      @include rect(0.44rem, 0.44rem);
+    }
+  }
+}
+
+.xieyi {
+  @include rect(100%, auto);
+  @include text-align(center);
+  @include margin-top(15%);
+  p {
+    @include color(#f00);
+  }
+}
+   

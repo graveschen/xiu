@@ -1,0 +1,165 @@
+@import '@/qunar/reset.scss';
+
+.detailbox {
+  @include background-color(#fff);
+  @include rect(100%, 100%);
+  @include flexbox();
+  @include flex-direction(column);
+
+  .headdetial {
+    @include rect(95%, 0.5rem);
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items();
+    @include margin(10px);
+    
+    span {
+      font-size:0.2rem;
+      color: #666;
+    }
+    .leftbox {
+      @include rect(10%, 100%);
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content();
+      @include align-items();
+    }
+    .rightbox {
+      @include rect(30%, 100%);
+      @include flexbox();
+      @include justify-content(space-around);
+      @include align-items();
+    }
+    a {
+      @include rect(.4rem, .4rem);
+      @include background-color(#eee);
+      @include border-radius(50%);
+      @include text-align();
+      @include line-height(.4rem);
+      @include font-size(0.2rem);
+      @include font-weight(700);
+    }
+    li {
+      @include rect(.4rem, .4rem);
+      @include background-color(#eee);
+      @include border-radius(50%);
+      @include text-align();
+      @include line-height(.4rem);
+      @include font-size(0.2rem);
+      @include font-weight(700);
+    }
+  }
+  
+  .detail {
+    @include flex();
+    @include rect(100%, auto);
+    @include overflow();
+  
+    img {
+      @include rect(100%, 3.6rem);
+      @include padding(0 10px 0 10px);
+    }
+    .info {
+      margin-top: 30px;
+      @include rect(100%, 2rem);
+      
+      .brand {
+        @include rect(100%, auto);
+        @include line-height(0.3rem);
+        font-size: 0.2rem;
+        @include padding(0 10px 0 10px);
+      }
+      .title {
+        @include rect(100%, auto);
+        @include line-height(0.3rem);
+        font-size: 0.16rem;
+        @include padding(5px 10px 5px 10px);
+      }
+      .sale {
+        @include rect(100%, auto);
+        @include line-height(0.3rem);
+        font-size: 0.2rem;
+        @include padding(0 10px 0 10px);
+        color: #e56356;
+        font-weight: 700;
+      }
+      .price {
+        @include rect(100%, 0.4rem);
+        @include line-height(0.3rem);
+        @include font-size(0.2rem);
+        @include font-weight(700);
+        @include padding(0 10px 0 10px);
+      }
+      .tips {
+        @include flexbox();
+        @include border(1 0 1 0 #eee solid);
+        @include rect(100%, .4rem);
+  
+        li {
+          @include flexbox();
+          @include line-height(0.4rem);
+          @include padding(0 25px 0 15px);
+  
+          span {
+            @include text-color(#e56356);
+          }
+          p {
+            @include padding(0 3px 0 3px);
+            font-size: .16rem;
+          }
+        }
+      }
+    }
+  }
+  
+  .detailfoot {
+    @include rect(100%, 0.6rem);
+    @include flexbox();
+  
+    ul {
+      @include flexbox();
+      @include flex();
+      @include justify-content(space-around);
+      @include background-color(#eee);
+  
+      li {
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content();
+        @include align-items();
+        font-size: 0.14rem;
+        // @include padding();
+        span {
+          font-size: 0.24rem;
+        }
+  
+      }
+    }
+    .cart {
+      @include rect(35%, 100%);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include background-color(#e56356);
+      @include text-color(#fff);
+      font-size: 0.16rem;
+  
+      p {
+        @include margin();
+      }
+    }
+    .fastcart {
+      @include rect(35%, 100%);
+      @include flexbox();
+      @include justify-content();
+      @include align-items();
+      @include background-color(#000);
+      @include text-color(#fff);
+      font-size: 0.16rem;
+  
+      p {
+        @include margin();
+      }
+    }
+  }
+}

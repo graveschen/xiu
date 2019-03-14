@@ -1,0 +1,34 @@
+@import '@/qunar/reset.scss';
+
+.contentnull {
+  margin-top: 0.5rem;
+  @include rect(100%, 2.6rem);
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content();
+  @include align-items();
+
+  span {
+    // @include rect(2rem ,2rem);
+    font-size: 0.5rem;
+  }
+  p {
+    margin-top: 30px; 
+    font-size: 0.2rem;
+  }
+}
+
+.banner {
+  @include flex();
+  @include rect(100%, auto);
+
+  h3 {
+    @include rect(100%, 0.8rem);
+    @include background-color(#fff);
+    // font: 0.2rem/0.8rem "";
+    font-size: 0.2rem;
+    line-height: 0.8rem;
+    @include text-align();
+    @include text-color(#666);
+  }
+}

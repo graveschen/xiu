@@ -1,0 +1,181 @@
+@import '@/qunar/reset.scss';
+
+.userhead {
+  @include rect(100%, auto);
+  @include flexbox();
+  @include flex-direction(column);
+
+  .headtop {
+    @include flexbox();
+    border-bottom: 1px solid rgb(212, 209, 209);
+
+    span {
+      @include rect(1rem, 0.6rem);
+      // font: 0.3rem/0.6rem "";
+      font-size: 0.3rem;
+      line-height: 0.6rem;
+      @include text-align();
+    }
+    p {
+      @include flex();
+      // font: 0.2rem/0.6rem "";
+      font-size: 0.2rem;
+      line-height: 0.6rem;
+      @include text-align();
+    }
+  }
+
+  .headinfo {
+    @include rect(100%, 0.8rem);
+    @include background-color(#fff);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+
+    .isLogin {
+      @include flexbox();
+      @include align-items();
+
+      span {
+        margin: 5px;
+        font-size: 0.6rem;
+      }
+      p {
+        font-size: 0.2rem;
+      }
+      button {
+        margin-left: 0.7rem;
+        @include rect(0.8rem, 0.4rem);
+        font-size: 0.2rem;
+        border: none;
+        @include background-color(#fff);
+        border: 1px solid #666;
+        border-radius: 0.1rem;
+      }
+
+    }
+    .innerhead {
+      @include flexbox();
+      @include rect(1.4rem, 0.5rem);
+      border: 1px solid #010101;
+
+      a {
+        @include rect(0.7rem, 0.5rem);
+        // font: 0.2rem/0.4rem "";
+        font-size: 0.2rem;
+        line-height: 0.5rem;
+        @include text-align();
+        @include text-color(#000);
+      }
+    }
+  }
+
+}
+
+.activity {
+  @include background-color(#f7f7f7);
+  .alllist {
+    @include margin(15px 0 10px 0);
+    @include background-color(#fff);
+
+    .listtop {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include rect(100%, 0.5rem);
+      @include padding(10px);
+      border-top: 1px solid #eee;
+
+      h3 {
+        @include font-size(0.16rem);
+        @include line-height(0.3rem);
+      }
+      a {
+        @include font-size(0.16rem);
+        @include line-height(0.3rem);
+        @include text-color(#000);
+      }
+    }
+    ul {
+      @include flexbox();
+      @include flex();
+      @include justify-content(space-around);
+      @include rect(auto, 100%);
+      border: 1px solid #eee;
+      @include padding(5px 0 0 0);
+
+      li {
+        @include flexbox();
+        @include flex-direction(column);
+        border: none;
+
+        span {
+          @include rect(100%, 0.3rem);
+          @include font-size(0.24rem);
+          @include text-align();
+        }
+        p{
+          @include rect(100%, 0.5rem);
+          @include font-size(0.15rem);
+          @include text-align();
+          @include line-height(0.5rem);
+        }
+      }
+    }
+  }
+  .history {
+    @include flexbox();
+    @include flex();
+    @include justify-content(space-around);
+    @include rect(auto, 100%);
+    @include background-color(#fff);
+    margin: 20px 0 20px 0;
+
+    li {
+      @include flexbox();
+      @include flex-direction(column);
+
+      span {
+        @include rect(100%, 0.2rem);
+        @include font-size(0.2rem);
+        @include text-align();
+        margin-top: 10px;
+      }
+      p{
+        @include rect(100%, 0.5rem);
+        @include font-size(0.15rem);
+        @include text-align();
+        @include line-height(0.5rem);
+      }
+    }
+  }
+  .task {
+    @include background-color(#fff);
+
+    ul {
+      @include flexbox();
+      @include flex();
+      @include flex-wrap(wrap);
+      @include rect(auto, 100%);
+
+      li {
+        @include flexbox();
+        @include rect(1.03rem, 1rem);
+        @include flex-direction(column);
+        border-bottom: 2px solid #eee;
+
+        span {
+          @include rect(100%, 0.3rem);
+          @include font-size(0.3rem);
+          @include text-align();
+          @include margin(15px 0 0 0);
+        }
+        p{
+          @include rect(100%, 0.6rem);
+          @include font-size(0.16rem);
+          @include text-align();
+          @include line-height(0.6rem);
+        }
+      }
+    }
+  }
+}

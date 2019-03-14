@@ -1,0 +1,81 @@
+@import '@/qunar/reset.scss';
+
+.alllist {
+  @include rect(100%, 100%);
+  @include flexbox();
+  @include flex-direction(column);
+
+  .allhead {
+    @include flexbox();
+    @include rect(100%, 0.5rem);
+    @include background-color(#fff); 
+
+    a {
+      @include rect(0.5rem, 100%);
+      // font: 0.2rem/0.5rem "";
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+      @include text-align();
+      @include text-color(#666);
+    }
+    p {
+      @include flex();
+      @include rect(auto, 100%);
+      text-indent: 1.2rem;
+      // font: 0.2rem/0.5rem "";
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+    }
+  }
+
+  ul {
+    @include flex();
+    @include rect(100%, auto);
+    @include overflow();
+
+    li {
+      @include rect(100%, auto);
+      @include background-color(#fff); 
+      margin-top: 15px;
+      border-top: 1px solid rgb(228, 225, 225);
+      border-bottom: 1px solid rgb(228, 225, 225);
+
+      h3 {
+        @include rect(100%, 0.5rem);
+        // font: 0.16rem/0.5rem '';
+        font-size: 0.16rem;
+        line-height: 0.5rem;
+        padding-left: 20px;
+        @include text-color(#6f6f6f);
+        border-bottom: 1px solid rgb(228, 225, 225);
+
+      }
+      .infobox {
+        @include flexbox();
+        @include rect(100%, 100%);
+
+        img {
+          @include rect(1rem, 1rem);
+          margin: 20px 15px 20px 15px;
+        }
+        .detailinfo {
+          @include flex();
+          @include rect(auto, 100%);
+
+          p {
+            @include rect(100%, 0.2rem);
+            margin-top: 15px;
+            @include text-color(#6f6f6f);
+            // font: 0.14rem/0.2rem "";
+            font-size: 0.14rem;
+            line-height: 0.2rem;
+
+            span {
+              @include text-color(#000);
+            }
+          }
+        }
+      }
+    }
+  }
+}

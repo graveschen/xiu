@@ -1,0 +1,52 @@
+@import '@/qunar/reset.scss';
+html, body, #root, .box {
+  @include rect(100%, 100%);
+}
+
+.box {
+  @include flexbox();
+  @include flex-direction(column);
+  @include position(relative);
+  .header {
+    @include rect(100%, 0.44rem);
+    @include background-color(#f66);
+  }
+  .container {
+    @include flexbox();
+    @include overflow();
+    @include flex();
+    @include rect(100%, auto); 
+  }
+  .content {
+    @include flex();
+    @include rect(100%, auto);
+    @include overflow();
+  }
+  .footer {
+    @include rect(100%, 0.6rem);
+    @include background-color(#eee);
+
+    ul {
+      @include flexbox();
+      @include rect(100%, 100%);
+
+      a {
+        span {
+          font-size: 0.2rem;
+        }
+        @include text-color(#666);
+        @include flexbox();
+        @include flex-direction(column);
+        @include flex();
+        @include rect(auto, 100%); // 四个标签如何平均分布，先flex自身调节宽度，在将宽度设为auto
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+
+        &.active {
+          @include text-color(#000);
+        }
+      }
+    }
+  }
+}

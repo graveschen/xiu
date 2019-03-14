@@ -1,0 +1,25 @@
+@import '@/qunar/reset.scss';
+
+html, body, #root, .box {
+  @include rect(100%, 100%);
+}
+
+.content {
+  @include rect(100%, 100%);
+  .want {
+    @include rect(100%, 100%);
+    @include background-color(#fff);
+    .tags {
+      a {
+        @include color(#000);
+        @include float(left);
+        @include font-size(0.16rem);
+        @include border-radius(0.04rem);
+        @include margin-left(0.05rem);
+        @include margin-bottom(0.05rem);
+        @include padding(0.026rem 0.12rem );
+        border: 1px  solid #999;
+      }
+    }
+  }
+}

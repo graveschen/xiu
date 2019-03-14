@@ -1,0 +1,80 @@
+@import '@/qunar/reset.scss';
+
+html, body, #root, .box {
+    @include rect(100%, 100%);
+    @include background-color(#f1f1f1);
+}
+
+.searchNav {
+  @include rect(100%, auto);
+  @include background-color(#f1f1f1);
+  @include text-align();
+  @include font-size(0.16rem);
+  @include line-height(0.55rem);
+  @include flexbox();
+  @include justify-content(space-around);
+  @include align-items();
+  border-bottom: 0.01rem solid #cfcfd0;
+  .back{
+    @include font-size(0.3rem);
+    @include color(#ff7805);
+  }
+  .searchInput {
+    // @include rect(2.5rem, 0.4rem);
+    // @include flexbox();
+    // @include align-items();
+    // @include border-radius(0.05rem);
+    // @include background-color(#fff);
+    // border: 0.01rem solid #ccc;
+    .txt {
+      border: none;
+    //   @include background-color(#f1f1f1);
+      @include border-radius(0.05rem);
+      @include rect(2.5rem, 0.4rem);
+      border: 0.01rem solid #ccc;
+      @include background-color(#fff);
+      @include padding-left(0.05rem);
+    }
+    .fangdajing {
+      @include font-size(0.3rem);
+    }
+  }
+  .sub {
+    @include color(#ff7805);
+    // @include border();
+    @include background-color(#f1f1f1);
+    border: none;
+  }
+}
+
+.hot {
+  @include background-color(#fff);
+  @include padding(0.1rem);
+  .star {
+    @include font-size(0.22rem);
+    .jiacu {
+      @include font-weight(700); 
+    }
+  }
+  .hot-advice {
+    @include margin-top(3%);
+    @include overflow(hidden);
+    .li {
+      float: left;
+      border: 0.01rem solid #ccc; 
+      @include margin(0 1% 2% 1%);
+      @include border-radius(0.03rem);
+      @include font-size(0.18rem);
+    //   @include rect(0.7rem, auto);
+      @include line-height(0.44rem);
+      @include text-align(center);
+      @include padding(0 0.15rem);
+      @include color(#000);
+    }
+  }
+}
+
+.last {
+  @include rect(100%, 100%);
+  @include background-color(#f1f1f1);
+}

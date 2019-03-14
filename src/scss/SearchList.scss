@@ -1,0 +1,108 @@
+@import '@/qunar/reset.scss';
+
+html, body, #root {
+    @include rect(100%, 100%);
+}
+.contentSearch {
+  @include rect(100%, 100%);
+  @include overflow();
+  .searchNav {
+    @include rect(100%, auto);
+    @include background-color(#f1f1f1);
+    @include text-align();
+    @include font-size(0.16rem);
+    @include line-height(0.55rem);
+    @include flexbox();
+    @include justify-content(space-around);
+    @include align-items();
+    border-bottom: 0.01rem solid #cfcfd0;
+    .back{
+      @include font-size(0.3rem);
+      @include color(#ff7805);
+    }
+    .searchInput {
+      @include rect(2.5rem, 0.4rem);
+      @include flexbox();
+      @include align-items();
+      @include border-radius(0.05rem);
+      @include background-color(#fff);
+      border: 0.01rem solid #ccc;
+      .txt {
+        border: none;
+      //   @include background-color(#f1f1f1);
+        @include rect(2rem, 0.34rem);
+        @include padding-left(0.05rem);
+      }
+      .fangdajing {
+        @include font-size(0.3rem);
+      }
+    }
+    .sub {
+      @include color(#ff7805);
+      // @include border();
+      @include background-color(#f1f1f1);
+      border: none;
+    }
+  }
+  
+  .choice {
+    @include flexbox();
+    @include justify-content(space-around);
+    @include align-items(center);
+    @include rect(100%, 0.38rem);
+    @include background-color(#fff);
+    @include font-size(0.16rem);
+    // @include margin-bottom(0.05rem);
+  }
+  
+  .productss { 
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(space-around);
+    @include overflow();
+    .s-pro {
+      @include rect(50%, auto);
+      @include background-color(#fff);
+      .sup {
+        @include flexbox();
+        @include justify-content(center);
+        img {
+          @include rect(1.4rem, 2rem);
+        }
+      }
+      .scenter {
+        @include rect(95%, auto);
+        @include margin(0 auto);
+        @include text-align(center);
+        @include color(#f00);
+        border: 0.01rem solid #ccc;
+      }
+      .sdown {
+        @include padding-left(0.06rem);
+        @include color(#000);
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+      }
+    }
+    // .message {
+    //   @include padding-left(0.1rem); ;
+    //   @include rect(50%, auto);
+    //   .sup {
+    //     @include flexbox();
+    //     @include justify-content(center);
+    //     img {
+    //       @include rect(1.2rem, 2rem);
+    //     }
+    //   }
+    //   .scenter {
+    //     @include rect(95%, auto);
+    //     @include margin(0 auto);
+    //     @include text-align(center);
+    //     @include color(#ff7805);
+    //     border: 0.01rem solid #ccc;
+    //   }
+    // }
+  }
+}

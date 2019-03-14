@@ -1,0 +1,181 @@
+@import '@/qunar/reset.scss';
+
+.orderbox {
+  @include rect(100%, 100%);
+  @include flexbox();
+  @include flex-direction(column);
+
+  .orderhead {
+    @include flexbox();
+    @include rect(100%, 0.5rem);
+    a {
+      @include rect(0.5rem, 100%);
+      // font: 0.2rem/0.5rem "";
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+      @include text-align();
+      @include text-color(#666);
+    }
+    p {
+      @include flex();
+      @include rect(auto, 100%);
+      text-indent: 1.2rem;
+      // font: 0.2rem/0.5rem "";
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+    }
+  }
+
+  .ordercontent {
+    @include flex();
+    @include rect(100%, auto);
+    @include overflow();
+
+    .orderimg {
+      @include flexbox();
+      @include background-color(#fff);
+      @include justify-content(space-between);
+
+      ul {
+        @include flexbox();
+
+        li {
+          @include rect(auto, 1rem);
+
+          img {
+            margin-top: 0.1rem;
+            @include rect(0.8rem, 0.8rem);
+            border: 1px solid #eee;
+          }
+        }
+      }
+      .ordernum {
+        @include flexbox();
+        @include align-items();
+
+        p {
+          @include font-size(0.18rem);
+        }
+        span {
+          margin: 0 10px 0 10px;
+          @include font-size(0.2rem);
+        }
+      }
+    }
+    .common{
+      margin-top: 0.1rem;
+      @include flexbox();
+      @include background-color(#fff);
+      @include rect(100%, 0.5rem);
+
+      p {
+        @include flex();
+        @include rect(auto, 100%);
+        // font: 0.18rem/0.5rem "";
+        font-size: 0.18rem;
+        line-height: 0.5rem;
+        text-indent: 10px;
+      }
+      span {
+        margin: 10px 10px 0 10px;
+        @include font-size(0.2rem);
+      }
+    }
+    .address {
+      @include rect(100%, auto);
+      @include flexbox();
+      @include background-color(#fff);
+      margin-top: 10px;
+
+      .write {
+        @include rect(3.8rem, 100%);
+        // font: 0.2rem/1.2rem "";
+        font-size: 0.2rem;
+        line-height: 1.2rem;
+        text-indent: 0.2rem;
+      }
+
+      .addressinfo {
+        @include rect(100%, 100%);
+        li {
+          margin: 15px 0 15px 0;
+          padding: 0 15px 0 15px;
+          
+          div {
+            @include rect(100%, 0.3rem);
+            // font: 0.16rem/0.3rem "";
+            font-size: 0.16rem;
+            line-height: 0.3rem;
+          }
+          .nameinfo {
+            @include flexbox();
+            @include rect(100%, 100%);
+            .name {
+              @include rect(1rem, auto);
+            }
+          }
+        }
+      }
+      span {
+        padding: 10px 10px 0 10px;
+        @include text-color(#666);
+        // font: 0.2rem/1rem '';
+        font-size: 0.2rem;
+        line-height: 1rem;
+      }
+    }
+    .note {
+      margin-top: 0.1rem;
+    }
+    .am-list-content {
+      @include flexbox();
+
+      span {
+        font-size: 0.4rem;
+        margin: 0 10px 0 10px;
+      }
+      p {
+        @include rect(3rem, auto);
+        // font: 0.2rem/0.6rem "";
+        font-size: 0.2rem;
+        line-height: 0.6rem;
+        text-indent: 20px;
+      }
+      input[type='checkbox']{
+        width: 22px;
+        height: 22px;
+        background-color: #fff;
+        -webkit-appearance:none;
+        border: 1px solid #c9c9c9;
+        border-radius: 50%;
+        outline: none;
+        margin-top: 20px;
+      }
+      .checkBox input[type=checkbox]:checked{
+        background: url("../imgs/bingo.png") no-repeat center;
+        background-size:16px 16px;
+      }
+    }
+    .infolist {
+      margin-top: 10px;
+      @include background-color(#fff);
+      padding: 5px;
+
+      p {
+        padding: 5px;
+        font-size: 16px;
+      }
+      span {
+        color: #f66;
+      }
+    }
+    .am-accordion {
+      margin-top: 10px;
+    }
+  }
+
+  .am-button {
+    @include rect(100%, 0.5rem);
+  }
+
+}

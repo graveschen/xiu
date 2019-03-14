@@ -1,0 +1,228 @@
+@import '../../qunar/reset.scss';
+.box {
+    .myheader{
+        @include rect(100%, 1rem);
+        .search{
+
+        align-items: center;
+        width:100%;
+        height:0.6rem;
+        display:flex;
+        .erweima{
+            margin-left:.18rem;
+            display:block;
+           font-size: .2rem;
+           span {
+            font-size: 0.26rem;
+            }
+        }
+        .text{
+            margin-left:.2rem;
+            @include rect(2.4rem, 0.4rem);
+            border: none;
+        }
+        .erweima{
+            margin-left:.29rem;
+        }
+        .xinfeng{
+            margin-left:.4rem;
+            .touser {
+                font-size: 0.3rem;
+                color: #7b7f82;
+            }
+        }
+    }
+        .menu{
+            width:100%;
+            height:.3rem;
+            a {
+              color:#000;
+            }
+            .menu1{
+                position: relative;
+              display:flex;
+              justify-content: space-around;
+              .ye{
+                  color: red;
+              }
+              .w{
+                   display:none;
+                  display:flex;
+                  justify-content:space-between; 
+                  flex-wrap: wrap;
+                  width:2.5rem;
+                  height:1.3rem;
+                  background:#ccc;
+                  opacity:.8;
+                  z-index:1;
+                  position:absolute;
+                  left:.68rem;
+                  top:0.285rem;
+                  li{
+                    margin-left:.05rem;
+                    width:.8rem;
+                    height:.3rem;
+                    color:#000;
+                    opacity:1;
+                  }
+                }
+            }
+            // }
+        }
+      };
+      
+      .homecontent {
+        @include background-color(#fff);
+          @include position(relative);
+          width:100%;
+          height:auto;
+          overflow:hidden;
+          .hot {
+              @include flexbox();
+              @include justify-content();
+              @include align-items();
+              img{
+                  width:1.2rem;
+                  height:.4rem;
+              }
+
+              .laba{
+                  .la{
+                      margin-left:.6rem;
+                      width:.2rem;
+                      height:.2rem;
+                  } 
+            }
+            .lun{
+                width:1.6rem;
+               .slider-slide{
+                   width:1.6rem;
+                   .v-item{
+                       width:1.6rem;
+                   font:.14rem/.2rem "";
+                   }
+                }
+                }
+          }
+          .list{
+              display:flex;
+              justify-content: space-around;
+              flex-wrap: wrap;
+              li{
+                  // overflow: hidden;
+                  @include font-size(0.16rem);
+                  a{
+                      display:block;
+                      img{
+                      width:1.8rem;
+                      height:2.6rem;
+                      }
+                  }
+                  span{
+                      height:.24rem;
+                      overflow:hidden;
+                      display:block;
+                      width:1.8rem;
+                  }
+                  p {
+                    color: #f00;
+                  }
+              }
+          }
+          .huo{
+              width:100%;
+              height:auto;
+              img{
+                  margin-left:.1rem;
+                  margin-top:.1rem;
+                width:95%;
+                height:auto;  
+              }
+          }
+          .dong{
+              width:100%;
+              h3{
+                @include flexbox();
+                @include justify-content();
+                @include align-items();
+                  display:block;
+                  margin-top:.3rem;
+                  margin-bottom: .3rem;
+                font-size:.18rem;
+                text-align:center;
+                color:#666;
+                span{
+                    margin-left:.3rem;
+                    display:block;
+                    width:.3rem;
+                    height:.01rem;
+                    background:#666;
+                }
+                i{
+                    display:block;
+                }
+              }
+              img{
+                  margin-left:.2rem;
+                  width:1.8rem;
+                  height:2.4rem;
+              }
+          }
+          .yi{
+              ul{
+                display:flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+              img{
+                  display:block;
+                  width:0.85rem;
+                  height:0.85rem;
+              }
+              span{
+                  font-size:.14rem;
+                  display:block;
+                  text-align: center;
+              }
+          }
+        }
+          .tui{
+              width:100%;
+              h3{
+                @include flexbox();
+                @include justify-content();
+                @include align-items();
+                  display:block;
+                  margin-top:.3rem;
+                  margin-bottom: .3rem;
+                font-size:.18rem;
+                text-align:center;
+                color:#666;
+                span{
+                    margin-left:.3rem;
+                    display:block;
+                    width:.3rem;
+                    height:.01rem;
+                    background:#666;
+                }
+                i{
+                    display:block;
+                }
+              }
+              img{
+                  margin-bottom:.1rem;
+                  margin-left:.1rem;
+                  width:95%;
+                  height:auto;
+              }
+          }
+      
+      }
+      
+    //   .footer{
+    //     position: absolute ;
+    //     bottom: 0;
+    //   }
+}
+.hie {
+  @include color(#000);
+}

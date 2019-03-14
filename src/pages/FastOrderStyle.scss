@@ -1,0 +1,76 @@
+@import '@/qunar/reset.scss';
+
+.details {
+  margin-bottom: 5px;
+  @include flexbox();
+  @include align-items();
+
+  img {
+    margin-top: 5px;
+    @include rect(1.2rem, 1rem);
+  }
+  .infos {
+    @include flex();
+    @include rect(2rem, 100%);
+
+    .brand {
+      @include rect(2.55rem, auto);
+      margin-left: 0.2rem;
+    }
+    .price {
+      @include rect(2.55rem, auto);
+      margin-left: 0.2rem;
+    }
+    .name {
+      @include rect(2.55rem, auto);
+      margin-left: 0.2rem;
+    }
+    .numberbox {
+      @include rect(2.55rem, auto);
+      margin-left: 0.2rem;
+    }
+
+    .update {
+      margin-left: 1.5rem;
+      @include font-size(0.18rem);
+    }
+  }
+  .numberchange {
+    @include rect(2.55rem, 0.27rem);
+    margin-left: 0.2rem;
+    @include flexbox();
+
+    .num {
+      @include flexbox();
+      @include rect(auto, 0.27rem);
+      @include align-items();
+
+      .add {
+        @include rect(0.32rem, 0.27rem);
+        border: 1px solid rgb(175, 171, 171);
+        @include text-align();
+        @include font-weight(700);
+      }
+      input {
+        @include rect(0.4rem, 0.27rem);
+        border: none;
+        @include text-align();
+        border-top: 1px solid rgb(175, 171, 171);
+        border-bottom: 1px solid rgb(175, 171, 171);
+      }
+      .deadd {
+        @include rect(0.32rem, 0.27rem);
+        border: 1px solid rgb(175, 171, 171);
+        @include text-align();
+        @include font-weight(750);
+      }
+    }
+    button {
+      @include rect(0.6rem, 0.27rem);
+      @include background-color(#fff);
+      border: none;
+      border: 1px solid rgb(175, 171, 171);
+      margin-left: 0.4rem;
+    }
+  }
+}

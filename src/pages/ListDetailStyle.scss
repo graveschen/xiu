@@ -1,0 +1,137 @@
+@import '@/qunar/reset.scss';
+
+.detailbox {
+  @include rect(100%, 100%);
+  @include flexbox();
+  @include flex-direction(column);
+
+  .detailhead {
+    @include flexbox();
+    @include rect(100%, 0.5rem);
+    @include background-color(#fff); 
+  
+    a {
+      @include rect(0.5rem, 100%);
+      // font: 0.2rem/0.5rem "";
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+      @include text-align();
+      @include text-color(#666);
+    }
+    p {
+      @include flex();
+      @include rect(auto, 100%);
+      text-indent: 1.2rem;
+      // font: 0.2rem/0.5rem "";
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+    }
+  }
+  .detailcontent {
+    @include flex();
+    @include rect(100%, auto);
+    @include overflow();
+
+    h3 {
+        @include rect(100%, 0.5rem);
+        // font: 0.16rem/0.5rem '';
+        font-size: 0.16rem;
+        line-height: 0.5rem;
+        padding-left: 20px;
+        @include text-color(#6f6f6f);
+        border-bottom: 1px solid rgb(228, 225, 225);
+        @include text-color(#f66);
+    }
+    .receiveinfo {
+      @include background-color(#fff); 
+      margin-top: 15px;
+
+      .receiver {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        p {
+          @include rect(100%, 0.3rem);
+          // font: 0.15rem/0.3rem '';
+          font-size: 0.15rem;
+          line-height: 0.3rem;
+        }
+      }
+    }
+    .goodsinfo {
+      @include background-color(#fff); 
+      margin-top: 15px;
+
+      .goodsbox {
+        padding: 10px 0 10px 20px;
+        @include flexbox();
+
+        img {
+          @include rect(1rem, 1rem);
+        }
+        .goods {
+          margin-left: 10px;
+          @include flex();
+
+          p {
+            @include rect(2.6rem, auto);
+            // font: 0.16rem/0.2rem '';
+            font-size: 0.16rem;
+            line-height: 0.2rem;
+            margin-bottom: 5px;
+          }
+          span {
+            color: #6f6f6f;
+          }
+        }
+      }
+    }
+    .listinfo {
+      @include background-color(#fff); 
+      margin-top: 15px;
+
+      p {
+        @include rect(100%, 0.3rem);
+        // font: 0.15rem/0.3rem '';
+        font-size: 0.15rem;
+        line-height: 0.3rem;
+        color: #6f6f6f;
+        span {
+          color: #000;
+        }
+      }
+
+      .listbox {
+        padding: 10px 0 20px 20px;
+      }
+      .goodsstate {
+        margin: 10px 0 10px 0;
+      }
+      .total {
+        p {
+          // font: 0.2rem/0.4rem '';
+          font-size: 0.2rem;
+          line-height: 0.4rem;
+          span {
+            color: #f66;
+          }
+        }
+      }
+    }
+    .paystate {
+      @include background-color(#fff); 
+      margin-top: 15px;
+
+      p {
+        @include rect(100%, 0.4rem);
+        // font: 0.2rem/0.4rem '';
+        font-size: 0.2rem;
+        line-height: 0.4rem;
+        color: #f66;
+        span {
+          color: #6f6f6f;
+        }
+        padding-left: 20px;
+      }
+    }
+  }
+}

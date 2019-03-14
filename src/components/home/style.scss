@@ -1,0 +1,21 @@
+@import '@/qunar/reset.scss';
+
+.movielist {
+  a {
+    @include rect(100%, 1.1rem);
+    @include flexbox();
+    .movieimg{
+      @include rect(1rem, 1rem);
+      @include padding(0.05rem);
+      img{
+        @include rect(auto, 1rem);
+      }
+    }
+
+    .info {
+      @include flex();
+    }
+
+    @include border(0 0 1px 0, #ccc, solid); // 1px边框实现
+  }
+}

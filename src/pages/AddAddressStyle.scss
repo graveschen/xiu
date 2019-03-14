@@ -1,0 +1,49 @@
+@import '@/qunar/reset.scss';
+
+.addbox {
+  @include rect(100%, 100%);
+  
+  .addhead {
+    @include flexbox();
+    @include rect(100%, 0.5rem);
+    @include background-color(#fff);
+
+    a {
+      @include rect(0.5rem, 100%);
+      // font: 0.2rem/0.5rem "";
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+      @include text-align();
+      @include text-color(#666);
+    }
+    p {
+      @include flex();
+      @include rect(auto, 100%);
+      // font: 0.2rem/0.5rem "";
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+      @include text-align();
+    }
+    .save {
+      @include rect(1rem, 100%);
+      // font: 0.2rem/0.5rem "";
+      font-size: 0.2rem;
+      line-height: 0.5rem;
+      @include text-align();
+    }
+  }
+
+  .addcontent {
+    @include rect(100%, auto);
+    .am-list {
+      margin-top: 15px;
+    }
+    .am-list-content {
+      flex: 0.8!important;
+    }
+    .am-list-extra {
+      overflow: visible!important;
+      margin-left: 1rem;
+    }
+  }
+}

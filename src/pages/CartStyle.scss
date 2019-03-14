@@ -1,0 +1,206 @@
+@import '@/qunar/reset.scss';
+
+.cartbox {
+  @include rect(100%, auto);
+}
+.cart {
+  @include flexbox();
+  @include flex-direction(column);
+  @include rect(100%, 100%);
+
+  .carthead {
+    position: fixed;
+    background: #fff;
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include rect(100%, 0.5rem);
+
+    div {
+      @include flex();
+      @include rect(auto, 100%);
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(); 
+    }
+    .back {
+      font-size: 0.3rem;
+      padding-left: 0.1rem;
+    }
+    .title {
+      font-size: 0.2rem;
+      @include text-align();
+    }
+    .editor {
+      font-size: 0.18rem;
+      @include text-align();
+    }
+  }
+  .cartcontent {
+    margin-top: 0.6rem;
+    @include flex();
+    @include rect(100%, auto);
+    @include overflow();
+
+    ul {
+      @include rect(100%, auto);
+      @include background-color(#fff);
+
+      li {
+        margin-bottom: 5px;
+        @include flexbox();
+        @include align-items();
+
+        #checkaction {
+          @include rect(0.16rem, 0.16rem);
+          margin-left: 0.1rem;
+        }
+        .am-checkbox-item {
+          @include rect(0.4rem, 0.4rem);
+        }
+        img {
+          @include rect(1rem, 1.2rem);
+        }
+        .infos {
+          @include flex();
+          @include rect(auto, auto);
+
+          .brand {
+            @include rect(2.55rem, auto);
+            margin-left: 0.2rem;
+          }
+          .price {
+            @include rect(2.55rem, auto);
+            margin-left: 0.2rem;
+          }
+          .name {
+            @include rect(2.55rem, auto);
+            margin-left: 0.2rem;
+          }
+          .numberbox {
+            @include rect(2.55rem, auto);
+            margin-left: 0.2rem;
+          }
+
+          .update {
+            margin-left: 1.5rem;
+            @include font-size(0.18rem);
+          }
+        }
+        .numberchange {
+          @include rect(2.55rem, 0.27rem);
+          margin-left: 0.2rem;
+          @include flexbox();
+
+          .num {
+            @include flexbox();
+            @include rect(auto, 0.27rem);
+            @include align-items();
+
+            .add {
+              @include rect(0.32rem, 0.27rem);
+              border: 1px solid rgb(175, 171, 171);
+              @include text-align();
+              @include font-weight(700);
+            }
+            input {
+              @include rect(0.4rem, 0.27rem);
+              border: none;
+              @include text-align();
+              border-top: 1px solid rgb(175, 171, 171);
+              border-bottom: 1px solid rgb(175, 171, 171);
+            }
+            .deadd {
+              @include rect(0.32rem, 0.27rem);
+              border: 1px solid rgb(175, 171, 171);
+              @include text-align();
+              @include font-weight(750);
+            }
+          }
+          button {
+            @include rect(0.6rem, 0.27rem);
+            @include background-color(#fff);
+            border: none;
+            border: 1px solid rgb(175, 171, 171);
+            margin-left: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+  .paybottom {
+    @include rect(100%, 0.6rem);
+    @include flexbox();
+    border-top: 3px solid #eaeaea;
+    background: #fff;
+
+    .money {
+      @include rect(1.8rem, 100%);
+      // font: 0.18rem/0.54rem '';
+      font-size: 0.18rem;
+      line-height: 0.54rem;
+      margin-left:30px;
+    }
+    .pay {
+      @include flex();
+      @include text-align();
+      // font: 0.18rem/0.54rem '';
+      font-size: 0.18rem;
+      line-height: 0.54rem;
+      @include text-color(#fff);
+      @include background-color(#f66);
+    }
+  }
+
+  .deletebottom {
+    @include rect(100%, 0.6rem);
+    @include flexbox();
+    border-top: 3px solid #eaeaea;
+    background: #fff;
+
+    .favor {
+      @include rect(1.4rem, 100%);
+      // font: 0.18rem/0.54rem '';
+      font-size: 0.18rem;
+      line-height: 0.54rem;
+      margin-left:50px;
+      @include text-align();
+      @include background-color(rgb(66, 64, 64));
+      @include text-color(#fff);
+    }
+    .deleteaction {
+      @include flex();
+      @include text-align();
+      // font: 0.18rem/0.54rem '';
+      font-size: 0.18rem;
+      line-height: 0.54rem;
+      @include text-color(#fff);
+      @include background-color(#f66);
+    }
+  }
+  .checkaction {
+    @include flexbox();
+    .optionsall {
+      font-size: 0.2rem;
+      margin-top: 0;
+      margin-top: 13px;
+    }
+    .checkBox {
+      margin-top: 6px;
+    }
+  }
+  input[type='checkbox']{
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    -webkit-appearance:none;
+    border: 1px solid #c9c9c9;
+    border-radius: 50%;
+    outline: none;
+    margin: 10px 5px 0 10px;
+  }
+  .checkBox input[type=checkbox]:checked{
+    background: url("../imgs/bingo.png") no-repeat center;
+    background-size:16px 16px;
+  }
+}
